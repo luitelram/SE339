@@ -1,0 +1,16 @@
+{
+  "name": "FIESTA",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "Fiesta Sever",
+  "dependencies": {
+    "express": "*",
+    "socket.io": "*",
+    "socketio-file-upload": "^0.4.4"
+  },
+  "apidoc": {
+    "title": "Fiesta Server API",
+	"author": "Fiesta"
+  }
+}
+ 

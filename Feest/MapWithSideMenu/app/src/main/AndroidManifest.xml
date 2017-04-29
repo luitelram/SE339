@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.faizuljiastate.mapwithsidemenu">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/letter_f"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        android:name="android.support.multidex.MultiDexApplication">
+
+        <!--
+            The API key for Google Maps-based APIs is defined as a string resource.
+            (See the file "res/values/google_maps_api.xml").
+            Note that the API key is linked to the encryption key used to sign the APK.
+            You need a different API key for each encryption key, including the release key that is used to
+            sign the APK for publishing.
+            You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCtE5l3zZ6RV-1olDR431i_HBvW4Bc_5NQ" />/
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".YourProfileActivity"
+            android:label="My Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FriendsListActivity"
+            android:label="My Friends"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MessagingActivity"
+            android:label="Chat Room"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventsListActivity"
+            android:label="My Events"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllEventsListActivity"
+            android:label="All Events"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllUsersListActivity"
+            android:label="All Users"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".CreateEventActivity"
+            android:label="New Event" />
+        <activity android:name=".FriendsAdapter" />
+        <activity android:name=".EventsAdapter" />
+        <activity
+            android:name=".ChangeAvatarActivity"
+            android:label="Update Avatar" />
+        <activity
+            android:name=".DisplayFriendDetail"
+            android:label="Friend" />
+        <activity
+            android:name=".DisplayUserDetail"
+            android:label="User" />
+        <activity
+            android:name=".NotifsListActivity"
+            android:label="Notifications" />
+        <activity android:name=".NotifsAdapter" />
+        <activity
+            android:name=".DisplayEventDetail"
+            android:label="@string/title_activity_display_event_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Invitation"
+            android:label="Send Inventation"></activity>
+    </application>
+
+</manifest>

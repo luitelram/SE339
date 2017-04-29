@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/content_your_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.faizuljiastate.mapwithsidemenu.YourProfileActivity"
+    tools:showIn="@layout/app_bar_your_profile">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/change_prof_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:text="Change Profile Picture"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username: "
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/username_database"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id_fullname"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/username"
+                android:layout_toEndOf="@+id/username" />
+
+            <TextView
+            android:id="@+id/fullname_database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id_fullname"
+                android:layout_alignBaseline="@+id/fullname"
+                android:layout_alignBottom="@+id/fullname"
+                android:layout_toRightOf="@+id/fullname"
+                android:layout_toEndOf="@+id/fullname" />
+
+            <TextView
+                android:id="@+id/gender_database"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id_gender"
+                android:layout_alignBaseline="@+id/gender"
+                android:layout_alignBottom="@+id/gender"
+                android:layout_toRightOf="@+id/gender"
+                android:layout_toEndOf="@+id/gender" />
+
+            <TextView
+                android:id="@+id/age_database"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id_age"
+                android:layout_alignBaseline="@+id/age"
+                android:layout_alignBottom="@+id/age"
+                android:layout_toRightOf="@+id/age"
+                android:layout_toEndOf="@+id/age" />
+
+
+            <TextView
+            android:id="@+id/fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name: "
+                android:layout_below="@+id/username"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: "
+                android:layout_below="@+id/fullname"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:clickable="false"
+                android:layout_alignBottom="@+id/rating"
+                android:layout_toRightOf="@+id/rating"
+                android:layout_toEndOf="@+id/rating" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: "
+                android:layout_below="@+id/email"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:text="Phone: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:layout_marginTop="11dp"
+                android:layout_below="@+id/address"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday: "
+                android:layout_below="@+id/gender_database"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:text="Address: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:layout_below="@+id/age"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:text="Email: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_below="@+id/phone"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:text="id_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_database"
+                android:layout_alignBaseline="@+id/phone"
+                android:layout_alignBottom="@+id/phone"
+                android:layout_toRightOf="@+id/phone"
+                android:layout_toEndOf="@+id/phone" />
+
+            <TextView
+                android:text="id_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/email"
+                android:layout_toRightOf="@+id/email"
+                android:layout_toEndOf="@+id/email"
+                android:id="@+id/email_database" />
+
+            <TextView
+                android:text="id_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_database"
+                android:layout_alignBaseline="@+id/address"
+                android:layout_alignBottom="@+id/address"
+                android:layout_toRightOf="@+id/age"
+                android:layout_toEndOf="@+id/age" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
+

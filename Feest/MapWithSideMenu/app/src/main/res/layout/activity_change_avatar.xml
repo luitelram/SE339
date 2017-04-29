@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_avatar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.faizuljiastate.mapwithsidemenu.ChangeAvatarActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@android:drawable/ic_menu_report_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:id="@+id/imageupdate" />
+
+    <Button
+        android:text="Take Photo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/takephoto"
+        android:layout_below="@+id/imageupdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Upload Image"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload"
+        android:layout_alignBaseline="@+id/takephoto"
+        android:layout_alignBottom="@+id/takephoto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:layout_below="@+id/takephoto"
+        android:layout_alignLeft="@+id/imageupdate"
+        android:layout_alignStart="@+id/imageupdate"
+        android:layout_marginTop="21dp" />
+
+</RelativeLayout>

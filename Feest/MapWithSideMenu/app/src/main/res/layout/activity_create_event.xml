@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_your_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.faizuljiastate.mapwithsidemenu.YourProfileActivity">
+
+    <Button
+        android:id="@+id/change_prof_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:onClick="onMapSearch"
+        android:text="Change Event Picture"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/ID_event_time"
+        android:hint="Event Time..."
+        android:layout_below="@+id/ID_eventAddress"
+        android:layout_alignLeft="@+id/ID_eventAddress"
+        android:layout_alignStart="@+id/ID_eventAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/ID_event_date"
+        android:hint="Event date..."
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/ID_eventAddress"
+        android:layout_alignLeft="@+id/ID_event_time"
+        android:layout_alignStart="@+id/ID_event_time" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ID_min_age"
+        android:hint="Mininum Age"
+        android:layout_below="@+id/ID_event_date"
+        android:layout_alignLeft="@+id/ID_event_date"
+        android:layout_alignStart="@+id/ID_event_date" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ID_eventAddress"
+        android:hint="Event Address..."
+        android:layout_below="@+id/ID_event_name"
+        android:layout_alignLeft="@+id/ID_event_name"
+        android:layout_alignStart="@+id/ID_event_name" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ID_event_name"
+        android:hint="Event Name.."
+        android:layout_below="@+id/change_prof_pic"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Create Event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createEventBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:maxLines="5"
+        android:lines="5"
+        android:hint="Description (max 80 words)"
+        android:ems="10"
+        android:id="@+id/eddescription"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rgeventtype" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgeventtype"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ID_min_age">
+    <RadioButton
+        android:id="@+id/rbpublic"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ID_min_age"
+        android:checked="true"
+        android:text="Public" />
+
+    <RadioButton
+        android:id="@+id/rbprivate"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ID_min_age"
+        android:layout_toEndOf="@+id/rbpublic"
+        android:layout_toRightOf="@+id/rbpublic"
+        android:text="Private" />
+</RadioGroup>
+</RelativeLayout>

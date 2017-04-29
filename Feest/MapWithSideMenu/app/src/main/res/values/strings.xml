@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Feest</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_your_profile">Profile</string>
+    <string name="title_activity_friends_list">Friends List</string>
+    <string name="title_activity_messaging">Messaging</string>
+    <string name="title_activity_events_list">Events List</string>
+    <string name="title_activity_notif_list">Notification</string>
+    <string name="str_atv_places">Enter Place Here</string>
+    <string name="server_ip_address">http://10.26.1.180:3000</string>
+    <string name="title_activity_notifs_adapter">NotifsAdapter</string>
+    <string name="title_activity_display_event_detail">DisplayEventDetail</string>
+
+</resources>

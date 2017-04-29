@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_user_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.faizuljiastate.mapwithsidemenu.DisplayFriendDetail" >
+
+
+    <Button
+        android:text="Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitRating"
+
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayfbt"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Email: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:text="Phone: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:text="Gender: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="Birthday: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="Username: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayfadd"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/displayfbd"
+        android:layout_alignStart="@+id/displayfbd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayffn"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:text="TextView" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayfgender"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayfphone"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayfemail"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayfbd"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayfusn"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <ImageView
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_friends_list"
+        android:id="@+id/displayfavatar"
+        android:layout_width="100dp"
+        android:adjustViewBounds="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Address: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/displayfavatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Fullname: " />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:id="@+id/fratingBar"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_above="@+id/displayffn"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_below="@+id/displayfadd"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+</RelativeLayout>
+
+
